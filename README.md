@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# my_blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+这是我的第一个前端项目，用react写一个博客。
 
-## Available Scripts
+边写边学边改进。
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Update Log
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| 事件序号 | 时间       | 事件                                       |
+| -------- | ---------- | ------------------------------------------ |
+| 0        | 2022/02/26 | 用react-router v6作为路由                  |
+| 1        | 2022/02/27 | 将主要组件由类组件转为函数组件             |
+| 2        | 2022/02/28 | 完成项目主要静态页面。                     |
+| 3        | 2022/03/01 | 学习函数式组件下react-redux的使用          |
+| 4        | 2022/03/05 | 完成react-redux管理github issues数据       |
+| 5        | 2022/03/07 | 完成文章页面，使用react-markdown渲染页面   |
+| 6        | 2022/03/08 | 完成右侧分类列表、标签列表、以及三个归档页 |
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## TodoList
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [x] 静态页面
+- [x] Github issus作文章数据源
+- [x] react-markdown渲染md
+- [x] 翻页功能
+- [x] 首页卡片
+- [ ] **增加代码高亮**
+- [ ] Demo页面
+- [ ] 评论功能
+- [x] Redux管理数据
+- [x] react-router v6路由
+- [ ] 渲染优化，打包优化 （对于性能优化一块仍然不知道）
+- [ ]  整理代码, 增加代码复用率
+- [x] 三种分类模式
+- [x] 类组件为主转为函数式组件为主
+- [ ] **文章内部目录**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 需要重温的知识
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [ ] 状态的子传父
+- [ ] `useEffect` 的使用，尤其是模拟生命周期
+- [ ] 函数式组件与类组件的区别
+- [ ] `for in` 和 `for of` 的区别
+- [ ] `js` 异步编程 `Promise` `axios` `anysc`等
+- [ ] Diff 算法
+- [ ] 浏览器的渲染过程

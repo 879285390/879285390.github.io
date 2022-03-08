@@ -13,7 +13,6 @@ export default function ArticleAll() {
   const items = useSelector(state => state.items)
   const dispatch = useDispatch();
   useEffect(()=>{
-    //这里没有输出,即表示 useEffect没有运行
     dispatch(fetchIssuesIfNeeded());
   },[dispatch])
 
