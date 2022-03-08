@@ -1,0 +1,16 @@
+.article-sider{
+  background-color: white;
+}
+
+.article-sider-title{
+  height:50px;
+  text-align: center;
+  line-height: 50px;
+  font-size:20px;
+  border-bottom: 1px solid rgb(0 0 0);
+}
+
+.article-sider-content {
+  min-height:500px;
+  padding:5px 0 10px 20px;
+}

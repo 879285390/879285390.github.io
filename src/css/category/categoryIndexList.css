@@ -1,0 +1,21 @@
+.category-index-list {
+  width:98%;
+  min-height: 1200px;
+  background-color: white;
+}
+
+.article-category {
+  width:100%;
+  padding:20px;
+}
+
+.article-category h2 {
+  font-size:1.6rem;
+
+}
+
+.article-category li {
+  list-style:none;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}

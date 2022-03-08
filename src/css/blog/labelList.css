@@ -1,0 +1,19 @@
+.label-list {
+  padding:20px;
+}
+
+.label-list a{
+  display:inline-block;
+  margin: 5px;
+  padding:0 10px;
+  border:1px solid rgb(0 0 0);
+  border-radius: 5px;
+  font-size:16px;
+  text-decoration: none;
+  color: black;
+}
+
+.label-list a:hover{
+  color:black;
+  background-color: rgba(0,0,0,0.3);
+}

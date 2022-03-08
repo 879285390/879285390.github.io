@@ -1,0 +1,19 @@
+@import '~antd/dist/antd.css';
+html, body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  /* 如果内容移除一个元素的框，则浏览器会显示滚动条以便查看其余内容 */
+}
+
+h2, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+.middle{
+  /* 最小高度为当前屏幕高度 */
+  min-height: calc(100vh);
+  width:100%;
+  background-color: rgb(50,50,50);
+}

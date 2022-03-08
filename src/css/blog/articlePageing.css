@@ -1,0 +1,9 @@
+.article-pageing {
+  padding: 10px 0px;
+  display: flex;
+  align-content: center;
+}
+
+.article-pageing ul {
+  margin: 0 auto;
+}

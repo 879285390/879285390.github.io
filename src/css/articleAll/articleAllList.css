@@ -1,0 +1,22 @@
+.article-all-list {
+  width:98%;
+  min-height: 1200px;
+  background-color: white;
+}
+
+.article-year {
+  width:100%;
+  padding:20px;
+}
+
+.article-year h2 {
+  font-size:1.6rem;
+
+}
+
+.article-year li {
+  list-style:none;
+  font-size: 1.1rem;
+  margin-top: 5px;
+}
+
