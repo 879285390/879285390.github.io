@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef}from 'react';
 import PropTypes from 'prop-types';
 import {Routes,Route} from 'react-router-dom'
 import ArticlePage from '../components/article/articlePage'
@@ -7,10 +7,23 @@ import CategoryIndex from '../components/category/categoryindex';
 import LabelIndex from '../components/label/labelindex';
 import ArticleAll from '../components/articleAll/articleAll';
 
+// export const useScrol=()=> {
+//   let node = useRef();
+//   useEffect(()=>{
+//     node.current.scrollIntoView();
+//   },[])
+//   return node;
+// }
 
 export default function Blog() {
+  const node = useRef();
+  useEffect(()=>{
+    // console.log(node)
+    node.current.scrollIntoView();
+  },[])
+  // let node = useScrol()
     return (
-      <div>
+      <div ref={node}>
         <Routes>
           <Route path="*" element={<BlogIndex/>}/>
           <Route path={`article/:number`} element={<ArticlePage/>}/>

@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Row, Col} from 'antd';
+import { Row, Col } from 'antd';
 import { useSelector, useDispatch} from 'react-redux';
 import fetchIssuesIfNeeded from '../../actions/index';
 import ArticleArea from './articleArea';

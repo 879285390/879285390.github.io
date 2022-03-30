@@ -16,12 +16,12 @@ export default function HomeBanner(){
         <p>研究方向:目标检测与跟踪算法的嵌入式实现</p>
         <div className="home-banner-Link">
           <div className="link">
-            <a target="_blank" href="https://github.com/879285390" rel="noopener noreferrer">Github</a>/
+            <a target="_blank" href="https://github.com/879285390" rel="noopener noreferrer">Github</a>
           </div>
           <div className='link'>
             {/* 可以用github的个人主页功能展示简历 */}
             {/* 这里暂时不跳转 */}
-            <a target="_blank" href="https://github.com/879285390" rel="noopener noreferrer">在线简历</a>/
+            {/* <a target="_blank" href="https://github.com/879285390" rel="noopener noreferrer">在线简历</a>/ */}
             {/* <a target="_blank" href="javascript:;" onClick={(e)=>{e.preventDefault();}}>在线简历</a>/ */}
           </div>
         </div>

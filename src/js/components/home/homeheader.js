@@ -8,7 +8,7 @@ export default function HomeHeader() {
         <div className="home-header-subtitle">Welcome to Lin's blog</div>
         <div className="home-header-nav">
           <div className="home-header-nav-item"><Link to="/">Home</Link></div>
-          <div className="home-header-nav-item"><Link to="/blog">Bolg</Link></div>
+          <div className="home-header-nav-item"><Link to="/blog">Blog</Link></div>
           <div className="home-header-nav-item"><Link to="/demo">Demo</Link></div>
           <div className="home-header-nav-item"><Link to="/about">About Me</Link></div>          
         </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef} from 'react';
 import PropTypes from 'prop-types';
 import { Row, Col} from 'antd'
 import { useSelector, useDispatch} from 'react-redux';
@@ -11,16 +11,18 @@ export default function LabelIndex() {
   const isFetching= useSelector(state => state.isFetching&&true)
   const items = useSelector(state => state.items)
   const dispatch = useDispatch();
+  const node = useRef()
   useEffect(()=>{
     //这里没有输出,即表示 useEffect没有运行
     dispatch(fetchIssuesIfNeeded());
+    node.current.scrollIntoView();
   },[dispatch])
 
   if(isFetching) {
     return null;
   }
   return (
-    <div className="blog">
+    <div className="blog" ref={node}>
       <Row>
         <Col xs={24} sm={24} md={18}> 
           <LabelIndexList issues={items}/>

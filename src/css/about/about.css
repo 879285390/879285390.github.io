@@ -1,0 +1,51 @@
+.aboutme_index {
+  width:90%;
+  margin: 0 auto;
+  padding:50px 0;
+}
+
+.main-contain {
+  min-height:500px;
+  background-color: white;
+}
+
+.about-detail {
+  padding:15px;
+  text-align: center;
+}
+
+/* .about-detail h2{
+  font-size:24px;
+} */
+
+.about-detail p{
+  font-size:16px;
+  margin-top:5px;
+}
+
+hr {
+  width:90%;
+  margin-top:75px;
+}
+
+.contect-me{
+  padding:15px;
+  text-align: center;
+}
+
+.contect-me p{
+  font-size:16px;
+  margin-top:5px;
+}
+
+.main-contain a{
+  display:block;
+  margin:20px 0px;
+  font-size:24px;
+  text-align: center;
+  color:black;
+}
+
+.main-contain a:hover{
+  color:#13daec;
+}

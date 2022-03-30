@@ -8,9 +8,6 @@ import {Routes,Route} from "react-router-dom";
 import '../../css/index.css';
 
 export default function Index(){
-  // componentDidMount() {
-  //   console.log(this)
-  // }
     return (
       <div>
         <HomeHeader/>

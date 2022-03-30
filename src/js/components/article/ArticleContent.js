@@ -3,13 +3,13 @@ import React from 'react';
 // import {marked} from 'marked';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import {PrismLight as SyntaxHighlighter} from 'react-syntax-highlighter';
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter';
 import {xonokai} from 'react-syntax-highlighter/dist/esm/styles/prism';
 //设置高亮的语言
-import { jsx, javascript, sass, scss } from "react-syntax-highlighter/dist/esm/languages/prism";
+// import { jsx, javascript, sass, scss } from "react-syntax-highlighter/dist/esm/languages/prism";
 import '../../../css/article/articlecontent.css'
 
-export default function ArticleContent(props){
+export default function ArticleContent (props){
 
   // console.log(props)
   const issue = props.issue;
@@ -25,7 +25,30 @@ export default function ArticleContent(props){
       {issue.updated_at.split('T')[0]}
       </p>
       <div className="article-content-detail">
-       <ReactMarkdown children={issue.body} remarkPlugins={[remarkGfm]} className="md_html"/>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        children={issue.body}
+        className="md_html"
+        components={{
+          code({node, inline, className, children, ...props}) {
+            const match = /language-(\w+)/.exec(className || '')
+            return !inline && match ? (
+              <SyntaxHighlighter
+                children={String(children).replace(/\n$/, '')}
+                style={xonokai}
+                language={match[1]}
+                PreTag="div"
+                {...props}
+              />
+            ) : (
+              <code className={className} {...props}>
+                {children}
+              </code>
+            )
+          }
+        }}
+      />
+       {/* <ReactMarkdown children={issue.body} remarkPlugins={[remarkGfm]} className="md_html"/> */}
       </div>
       <div className="Welcome">
         欢迎点我评论
@@ -33,3 +56,4 @@ export default function ArticleContent(props){
     </div>
   )
 }
+
