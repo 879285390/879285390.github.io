@@ -3,9 +3,9 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from "react-router-dom"
 import fetchIssuesIfNeeded from '../../actions/index'
 import ArticleContent from "./ArticleContent"
-// import ArticleSider from "./ArticleSider";
+import ArticleSider from "./ArticleSider";
 import '../../../css/article/articlepage.css'
-// import { Row, Col} from 'antd';
+import { Row, Col} from 'antd';
 
 export default function ArticlePage() {
   const isFetching = useSelector(state=>state.isFetching)
@@ -34,12 +34,12 @@ export default function ArticlePage() {
   // console.log(issue)
     return (
       <div className="article-page"  ref={node}>
-        {/* <Row> */}
+        <Row> 
           {/* 原计划有文章导航页，但是目前还没看懂，因此之后再加上 */}
-          {/* <Col xs={24} sm={24} md={18}><ArticleContent issue={issue}/></Col> */}
-          {/* <Col xs={0} sm={0} md={6}><ArticleSider issue={issue}/></Col> */}
-        {/* </Row> */}
-        <ArticleContent issue={issue}/>
+          <Col xs={24} sm={24} md={18}><ArticleContent issue={issue}/></Col>
+          <Col xs={0} sm={0} md={6}><ArticleSider issue={issue}/></Col>
+        </Row>
+        {/* <ArticleContent issue={issue}/> */}
       </div>
     )
   }

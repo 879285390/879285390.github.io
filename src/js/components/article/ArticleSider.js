@@ -17,6 +17,7 @@ export default function ArticleSider(props){
             className="article-list"
             source={issue.body}
             headingTopOffset = {80}
+            ordered = {false}
           />
       </div>
     </div>
