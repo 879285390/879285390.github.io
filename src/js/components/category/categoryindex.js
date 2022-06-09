@@ -15,7 +15,7 @@ export default function CategoryIndex() {
   useEffect(()=>{
     //这里没有输出,即表示 useEffect没有运行
     dispatch(fetchIssuesIfNeeded());
-    node.current.scrollIntoView();
+    node.current?.scrollIntoView();
   },[dispatch])
 
   if(isFetching) {

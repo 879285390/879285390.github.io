@@ -31,10 +31,6 @@ export default function ArticleContent (props){
         className="md_html"
         components={{
           code({node, inline, className, children, ...props}) {
-            console.log(node)
-            // console.log(`inline is ${inline}`)
-            // console.log(`classname is ${className}`)
-            // console.log(`children is ${children}`)
             // 这里可能和无className的标签没有语法高亮有关，回头看一下
             const match = /language-(\w+)/.exec(className || '')
             return !inline && match ? (

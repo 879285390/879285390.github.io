@@ -16,7 +16,6 @@ export default function ArticleSider(props){
       <MarkNav
             className="article-list"
             source={issue.body}
-            headingTopOffset = {80}
             ordered = {false}
           />
       </div>
